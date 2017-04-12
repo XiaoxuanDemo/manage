@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="correct"
+  id="myeclipse.1486366015109"
+  context-root="/WorkCorrection"
+  j2ee-spec="1.7"
+  archive="correct.war">
+  <attributes>
+    <attribute name="webrootdir" value="src/main/webapp" />
+  </attributes>
+</project-module>
+

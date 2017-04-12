@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<script type="text/javascript">
+	function createXMLHttpRequest() {
+		var xmlHttp;
+		if (window.XMLHttpRequest) {
+			xmlHttp = new XMLHttpRequest();
+			if (xmlHttp.overrideMimeType)
+				xmlHttp.overrideMimeType('text/xml');
+		} else if (window.ActiveXObject) {
+			try {
+				xmlHttp = new ActiveXObject("Msxml2.XMLHTTP");
+			} catch (e) {
+				try {
+					xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+				} catch (e) {}
+			}
+		}
+		return xmlHttp;
+	}
+
+	xmlHttp = createXMLHttpRequest();
+	var url = "getfiledetail.jsp?fileid=" + id;
+	xmlHttp.open("GET", url, true); // 异步处理返回
+	xmlHttp.onreadystatechange = callback;
+	xmlHttp.setRequestHeader("Content-Type",
+		"application/x-www-form-urlencoded;");
+	xmlHttp.send();
+</script>
+<html>
+<head>
+<title>upload.html</title>
+
+<meta name="keywords" content="keyword1,keyword2,keyword3">
+<meta name="description" content="this is my page">
+<meta name="content-type" content="text/html; charset=UTF-8">
+
+<!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+
+</head>
+
+<body>
+	文件上传
+	<br>
+	<form action="uploadHome" method="post" enctype="multipart/form-data">
+		<input type="text" name="stuid" placeholder="请输入学号"> <br>
+		<input type="text" name="workname" placeholder="请输入proid"> <br>
+		<input type="file" id="file" name="file"> <input type="submit"
+			value="commit">
+	</form>
+</body>
+</html>

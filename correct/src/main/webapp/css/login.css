@@ -1,0 +1,132 @@
+			*{
+			margin: 0;
+			padding: 0;
+			}
+		body{
+			background-image: url(../img/school.png);
+			background-size: cover;
+			width: 100%;
+			height: 100%;
+			}
+			font{
+				color: red;
+				size: 15px;
+			}
+		.login1{
+			width: 450px;
+			height: 320px;
+			position: absolute;   
+            top: 50%;   
+            left: 50%;   
+            -webkit-transform: translate(-50%, -50%);   
+            -moz-transform: translate(-50%, -50%);   
+            -ms-transform: translate(-50%, -50%);    
+            transform: translate(-50%, -50%);
+            background:rgba(255,255,255,0.6);
+            border-radius:10px;
+		}
+		.title{
+			margin-top: 10px;
+			text-align: center;
+			font-size: 25px;
+			font-family:"estrangelo edessa";
+			color:darkslategrey;
+		}
+		.login2{
+			width: 280px;
+			height: 280px;
+			margin: 0 auto;
+		}
+		.login2 p{
+			font-family:"estrangelo edessa";
+			font-size: 20px;
+			color:darkslategrey ;
+		}
+		.name{
+			width: 242px;
+			height: 35px;
+			border-radius:5px;
+			border:1px solid darkgray;
+			font-size: 20px;
+			padding-left: 38px;
+		}
+		.password{
+			width: 242px;
+			height: 35px;
+			border-radius:5px;
+			border:1px solid darkgray;
+			font-size: 20px;
+			padding-left: 38px;
+		}
+		.code{
+			margin-bottom: 8px;
+			width: 170px;
+			height: 35px;
+			border-radius:5px;
+			border:1px solid darkgray;
+			vertical-align:middle;
+			font-size: 20px;
+			padding-left: 10px;
+		}
+	   	.codeImage{
+	   		margin-bottom: 8px;
+			width: 90px;
+			height: 35px;
+			vertical-align: middle;
+			cursor:pointer;
+		}
+		.sub{
+			width: 280px;
+			height: 40px;
+			line-height: 40px;
+		}
+		.remberfont{
+			font-family:"estrangelo edessa";
+			font-size: 14px;
+			color:darkslategrey;
+			vertical-align: middle;
+		}
+		.rember{
+			margin-left: 1px;
+			width: 18px;
+			height: 18px;
+			vertical-align: middle;
+			border:1px solid darkgray;
+		}
+		.refer{
+			float: right;
+			width: 90px;
+			height: 35px;
+			margin-right: 3px;
+			border-radius: 5px;
+			background-color: #00AEAE;
+			cursor:pointer;
+			border: none;
+			font-family:"微软雅黑";
+			font-size: 15px;
+			font-weight:bold;
+			color:white;
+		}
+		.refer:hover{
+			background-color: #80FFFF;
+		}
+		.icon-user{
+			position: absolute;
+			left: 0；z-index:5;
+			background-image: url(../img/user.png); 
+			background-repeat: no-repeat; 
+			background-position: 0px 2px; 
+			width: 32px; 
+			height: 36px; 
+			border-right:1px solid darkgray;
+		}
+		.icon-password{
+			position: absolute;
+			left: 0；z-index:5;
+			background-image: url(../img/password.png); 
+			background-repeat: no-repeat; 
+			background-position: 0px 2px; 
+			width: 32px; 
+			height: 36px; 
+			border-right:1px solid darkgray;
+		}
